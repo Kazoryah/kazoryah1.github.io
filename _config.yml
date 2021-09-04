@@ -14,15 +14,24 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 title: Romain "Kazoryah" HERMARY
+masthead_title: "Kazoryah"
 title_separator: "|"
-subtitle: "Version 0.0.1"
+subtitle: "Version 0.0.2"
 email: romain.hermary@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
-  This is my website where I upload various things, such as my presentations work.
+  I am Romain HERMARY, a 5th year research student at EPITA, a engineering school for computer science. This is my website where I upload various things related to my work.
 twitter_username: username
 github_username: kazoryah
+repository: "Kazoryah/kazoryah.github.io"
+teaser: /assets/images/teaser.jpg
 minimal_mistakes_skin: default
-search: true
+logo: "/assets/images/logo.png"
+og_image: /assets/images/logo.png
+search: false
+breadcrumbs: false
+
+date_format: "%Y-%m-%d"
+words_per_minute: 200
 
 # Build settings
 markdown: kramdown
@@ -62,18 +71,9 @@ author:
   avatar : "/assets/images/bio-photo.jpg"
   bio    : "Research Student at EPITA (Paris, France)"
   links:
-    - label: "Website"
-      icon: "fas fa-fw fa-link"
-      url: "https://"
-    - label: "Twitter"
-      icon: "fab fa-fw fa-twitter-square"
-      url: "https://twitter.com/"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
       url: "https://github.com/"
-    - label: "Instagram"
-      icon: "fab fa-fw fa-instagram"
-      url: "https://instagram.com/"
     - label: "LinkedIn"
       icon: "fab fa-fw fa-instagram"
       url: "https://linkedin.com/in/romain-hermary"
@@ -102,6 +102,7 @@ defaults:
       comments: true
       share: true
       related: true
+      show_date: true
   # _pages
   - scope:
       path: "_pages"
@@ -116,3 +117,6 @@ category_archive:
 tag_archive:
   type: liquid
   path: /tags/
+
+atom_feed:
+  hide: true
